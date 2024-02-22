@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/DustMusic/static/css/main.ac41eca8.css",
-    "main.js": "/DustMusic/static/js/main.a6af2b46.js",
+    "main.js": "/DustMusic/static/js/main.aa9d1237.js",
     "index.html": "/DustMusic/index.html",
     "main.ac41eca8.css.map": "/DustMusic/static/css/main.ac41eca8.css.map",
-    "main.a6af2b46.js.map": "/DustMusic/static/js/main.a6af2b46.js.map"
+    "main.aa9d1237.js.map": "/DustMusic/static/js/main.aa9d1237.js.map"
   },
   "entrypoints": [
     "static/css/main.ac41eca8.css",
-    "static/js/main.a6af2b46.js"
+    "static/js/main.aa9d1237.js"
   ]
 }
