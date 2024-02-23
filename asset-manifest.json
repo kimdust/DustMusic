@@ -1,13 +1,29 @@
 {
   "files": {
     "main.css": "/DustMusic/static/css/main.ac41eca8.css",
-    "main.js": "/DustMusic/static/js/main.aa9d1237.js",
+    "main.js": "/DustMusic/static/js/main.7f6a097b.js",
+    "static/media/seventeen.png": "/DustMusic/static/media/seventeen.17d321a56d5a0c29e190.png",
+    "static/media/idle.png": "/DustMusic/static/media/idle.fa59749a578bdd5c8a40.png",
+    "static/media/newjeans.png": "/DustMusic/static/media/newjeans.559b63092a24ce75f966.png",
+    "static/media/ive.png": "/DustMusic/static/media/ive.b63d8419a3360a2e4d9e.png",
+    "static/media/jk.png": "/DustMusic/static/media/jk.369a6e64d3fc829adcaf.png",
+    "static/media/akmu.png": "/DustMusic/static/media/akmu.78252e841dba2b6a53a2.png",
+    "static/media/lesserafim.png": "/DustMusic/static/media/lesserafim.6a73ff0b268718138396.png",
+    "static/media/imyounwoong.png": "/DustMusic/static/media/imyounwoong.a1a2c96fe1c4d6eba5b9.png",
+    "static/media/bol4.png": "/DustMusic/static/media/bol4.644136d7696e72eb3367.png",
+    "static/media/teayeon.png": "/DustMusic/static/media/teayeon.85f1c3274d12621450fb.png",
+    "static/media/bigbang.png": "/DustMusic/static/media/bigbang.db70f553ac9772b24cbd.png",
+    "static/media/iu.png": "/DustMusic/static/media/iu.0003733f1806d928b88a.png",
+    "static/media/aespa.png": "/DustMusic/static/media/aespa.7ec8fda0ed8d68f05388.png",
+    "static/media/yoonha.png": "/DustMusic/static/media/yoonha.5e0c80a972a7684c38a6.png",
+    "static/media/bts.png": "/DustMusic/static/media/bts.a0e7c14a4e9b257efdde.png",
+    "static/media/leellamarz.png": "/DustMusic/static/media/leellamarz.da018ae034738a8b848c.png",
     "index.html": "/DustMusic/index.html",
     "main.ac41eca8.css.map": "/DustMusic/static/css/main.ac41eca8.css.map",
-    "main.aa9d1237.js.map": "/DustMusic/static/js/main.aa9d1237.js.map"
+    "main.7f6a097b.js.map": "/DustMusic/static/js/main.7f6a097b.js.map"
   },
   "entrypoints": [
     "static/css/main.ac41eca8.css",
-    "static/js/main.aa9d1237.js"
+    "static/js/main.7f6a097b.js"
   ]
 }
