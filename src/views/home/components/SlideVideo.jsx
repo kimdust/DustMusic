@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Heading, Text } from "@chakra-ui/react";
 
 const SlideVideo = () => {
   const slideStyle = {
@@ -58,12 +58,22 @@ const SlideVideo = () => {
 
   return (
     <>
-      <Heading fontFamily={"Pretendard"} padding={"25px 0 20px 0"}>
+      <Heading fontFamily={"Pretendard"} padding={"30px 0 20px 0"}>
         추천 뮤직비디오
       </Heading>
       <Swiper
         spaceBetween={20}
-        slidesPerView={3.5}
+        breakpoints={{
+          0: {
+            slidesPerView: 1.5,
+          },
+          768: {
+            slidesPerView: 2.5,
+          },
+          1024: {
+            slidesPerView: 3.5,
+          },
+        }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >

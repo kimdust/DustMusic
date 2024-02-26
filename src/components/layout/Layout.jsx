@@ -23,7 +23,7 @@ const Layout = () => {
           justifyContent={"flex-end"}
           spacing={0}
           mb={"20px"}
-          alignItems={"center"}
+          alignItems={"flex-end"}
         >
           <Util />
         </Card>

@@ -274,7 +274,7 @@ const Mood = () => {
 
   return (
     <>
-      <Heading fontFamily={"Pretendard"} padding={"25px 0 20px 0"}>
+      <Heading fontFamily={"Pretendard"} padding={"30px 0 20px 0"}>
         무드에 따라 골라 듣는 추천음악
       </Heading>
       <VStack>
@@ -294,7 +294,10 @@ const Mood = () => {
             >
               힐링이 필요할 때 <FaLeaf />
             </Heading>
-            <Grid templateColumns={"repeat(2, 1fr)"} gap={6}>
+            <Grid
+              templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
+              gap={6}
+            >
               {heeling.map((heeling, index) => (
                 <GridItem key={index} style={gridStyle}>
                   <Link
@@ -331,7 +334,10 @@ const Mood = () => {
             >
               달달한 사랑노래 <FaHeart />
             </Heading>
-            <Grid templateColumns="repeat(2, 1fr)" gap={6}>
+            <Grid
+              templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
+              gap={6}
+            >
               {lovely.map((lovely, index) => (
                 <GridItem key={index} style={gridStyle}>
                   <Link
@@ -368,7 +374,10 @@ const Mood = () => {
             >
               추억 속으로 떠나요 <FaClock />
             </Heading>
-            <Grid templateColumns="repeat(2, 1fr)" gap={6}>
+            <Grid
+              templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
+              gap={6}
+            >
               {memory.map((memory, index) => (
                 <GridItem key={index} style={gridStyle}>
                   <Link
@@ -405,7 +414,10 @@ const Mood = () => {
             >
               트렌디 국내 힙합 <FaMusic />
             </Heading>
-            <Grid templateColumns="repeat(2, 1fr)" gap={6}>
+            <Grid
+              templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
+              gap={6}
+            >
               {hiphop.map((hiphop, index) => (
                 <GridItem key={index} style={gridStyle}>
                   <Link

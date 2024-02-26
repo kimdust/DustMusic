@@ -84,7 +84,17 @@ const SlideReplay = () => {
       </Heading>
       <Swiper
         spaceBetween={20}
-        slidesPerView={6.5}
+        breakpoints={{
+          0: {
+            slidesPerView: 2.5,
+          },
+          768: {
+            slidesPerView: 3.5,
+          },
+          1024: {
+            slidesPerView: 6.5,
+          },
+        }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >

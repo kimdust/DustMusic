@@ -5,7 +5,7 @@ import { AiFillHome, AiFillCustomerService } from "react-icons/ai";
 const Gnb = () => {
   const navArr = [
     { name: "HOME", path: "/", icon: <AiFillHome /> },
-    { name: "둘러보기", path: "/chart", icon: <AiFillCustomerService /> },
+    { name: "둘러보기", path: "/around", icon: <AiFillCustomerService /> },
   ];
 
   const location = useLocation();

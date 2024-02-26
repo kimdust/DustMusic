@@ -1,9 +1,9 @@
 import {
   Avatar,
+  Box,
   Button,
   ButtonGroup,
   Flex,
-  HStack,
   Input,
   InputGroup,
   InputLeftElement,
@@ -12,45 +12,61 @@ import {
 import { FiSearch } from "react-icons/fi";
 import { FaBars } from "react-icons/fa6";
 import { FaRegBell } from "react-icons/fa";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Util = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    if (window.innerWidth < 1200) {
+      setIsMenuOpen(!isMenuOpen);
+    }
+  };
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <Flex
-      alignItems={"center"}
-      h={61}
-      mt={{ base: 2, md: 0 }}
+      alignItems={"flex-end"}
+      justifyContent={"flex-end"}
       borderRadius={61}
       boxShadow={
         "0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color)"
       }
     >
-      <InputGroup w={"50%"}>
-        <Input
-          variant="outline"
-          placeholder="Search"
-          bg={"bgDefault"}
-          h={45}
-          borderRadius={45}
-        />
-        <InputLeftElement
-          top={"50%"}
-          transform={"translateY(-50%)"}
-          fontSize={20}
-        >
-          <FiSearch />
-        </InputLeftElement>
-      </InputGroup>
-      <Spacer />
       <ButtonGroup
         alignItems={"center"}
-        w={"42%"}
+        w={"100%"}
         display={"flex"}
-        justifyContent={"space-between"}
+        justifyContent={"flex-end"}
       >
-        <Button variant="icon">
-          <FaBars />
-          <span className="blind">전체메뉴 보기</span>
-        </Button>
+        <Box>
+          <Button variant="icon" onClick={toggleMenu}>
+            <FaBars />
+            <span className="blind">전체메뉴 보기</span>
+          </Button>
+          {isMenuOpen && (
+            <Box
+              className="slide-menu"
+              position={"absolute"}
+              w={"100vw"}
+              h={"70px"}
+              bg={"white"}
+              left={"-30px"}
+              top={"70px"}
+              zIndex={10000}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              gap={"40px"}
+              onClick={closeMenu}
+            >
+              <Link to={`/`}>Home</Link>
+              <Link to={`/around`}>둘러보기</Link>
+            </Box>
+          )}
+        </Box>
         <Button variant="icon">
           <FaRegBell />
           <span className="blind">알림</span>

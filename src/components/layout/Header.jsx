@@ -20,7 +20,7 @@ const Header = () => {
         as={"h1"}
         fontSize={25}
         fontWeight={400}
-        pt={14}
+        pt={9}
         pb={9}
         textAlign={"center"}
         borderBottom={"1px solid"}
