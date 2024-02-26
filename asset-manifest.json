@@ -1,7 +1,15 @@
 {
   "files": {
     "main.css": "/DustMusic/static/css/main.ac41eca8.css",
-    "main.js": "/DustMusic/static/js/main.9c8491f4.js",
+    "main.js": "/DustMusic/static/js/main.800e13d4.js",
+    "static/media/magazine01.png": "/DustMusic/static/media/magazine01.49615edec0c9ca3b87f4.png",
+    "static/media/magazine02.png": "/DustMusic/static/media/magazine02.12caceca4be166140eb1.png",
+    "static/media/magazine04.png": "/DustMusic/static/media/magazine04.7d63b45b5840c25a2151.png",
+    "static/media/magazine03.png": "/DustMusic/static/media/magazine03.834d6c151468f27b6a95.png",
+    "static/media/banner01.png": "/DustMusic/static/media/banner01.9ccee502e6fc092b486f.png",
+    "static/media/banner02.png": "/DustMusic/static/media/banner02.3910f21305b2422afc83.png",
+    "static/media/banner03.png": "/DustMusic/static/media/banner03.2af0397181638d5efcc4.png",
+    "static/media/magazine05.png": "/DustMusic/static/media/magazine05.46fb507285300a91d8cc.png",
     "static/media/seventeen.png": "/DustMusic/static/media/seventeen.17d321a56d5a0c29e190.png",
     "static/media/idle.png": "/DustMusic/static/media/idle.fa59749a578bdd5c8a40.png",
     "static/media/newjeans.png": "/DustMusic/static/media/newjeans.559b63092a24ce75f966.png",
@@ -20,10 +28,10 @@
     "static/media/leellamarz.png": "/DustMusic/static/media/leellamarz.da018ae034738a8b848c.png",
     "index.html": "/DustMusic/index.html",
     "main.ac41eca8.css.map": "/DustMusic/static/css/main.ac41eca8.css.map",
-    "main.9c8491f4.js.map": "/DustMusic/static/js/main.9c8491f4.js.map"
+    "main.800e13d4.js.map": "/DustMusic/static/js/main.800e13d4.js.map"
   },
   "entrypoints": [
     "static/css/main.ac41eca8.css",
-    "static/js/main.9c8491f4.js"
+    "static/js/main.800e13d4.js"
   ]
 }
