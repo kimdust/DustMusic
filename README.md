@@ -1,4 +1,4 @@
-![image](https://github.com/kimdust/DustMusic/assets/151487785/19307bae-ef7a-4144-84c1-ffe621a6ca47)🎵 DUST Music 웹사이트 만들기  
+🎵 DUST Music 웹사이트 만들기  
 =============
 
 ### 2023.02 ~ 2024.03     
