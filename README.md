@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+🎵 DUST Music 웹사이트 만들기  
+=============
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 2023.02 ~ 2024.03     
+:point_right: [깃허브 페이지] (https://kimdust.me/DustMusic)  
 
-## Available Scripts
+<br/>
+<br/>
 
-In the project directory, you can run:
 
-### `npm start`
+<img width="100%" src="https://github.com/kimdust/LaMer/assets/151487785/7d2642ba-b383-4c4a-b81c-46fb04f3f92e">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Main (https://kimdust.me/DustMusic)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br/>
 
-### `npm test`
+<img width="100%" src="https://github.com/kimdust/LaMer/assets/151487785/655dabe0-0f82-4d7f-8381-08656b50d6df">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Music Player (https://kimdust.me/DustMusic/music/0)
 
-### `npm run build`
+<br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img width="100%" src="https://github.com/kimdust/LaMer/assets/151487785/511795e0-d804-44e4-8859-5b3df929f0d6">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### 둘러보기 (https://kimdust.me/DustMusic/around)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br/>
 
-### `npm run eject`
+<img width="100%" src="https://github.com/kimdust/LaMer/assets/151487785/bc4dec95-836e-43c1-b162-9fd946a8b00a">
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### 앨범 소개 (https://kimdust.me/DustMusic/album/1)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<img width="100%" src="https://github.com/kimdust/LaMer/assets/151487785/2ed1b7c1-e8e9-44f2-9258-6d40e2e967b9">
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Top 50 (https://kimdust.me/DustMusic/chart)
