@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DustMusic/static/css/main.ac41eca8.css",
-    "main.js": "/DustMusic/static/js/main.89a7dc66.js",
+    "main.js": "/DustMusic/static/js/main.10db4c2f.js",
     "static/media/magazine02_xl.png": "/DustMusic/static/media/magazine02_xl.97250028048b2c0b812d.png",
     "static/media/magazine01_xl.png": "/DustMusic/static/media/magazine01_xl.d66437373a8f55496752.png",
     "static/media/magazine04_xl.png": "/DustMusic/static/media/magazine04_xl.47fd03444036c773d4b3.png",
@@ -60,10 +60,10 @@
     "static/media/leellamarz.png": "/DustMusic/static/media/leellamarz.da018ae034738a8b848c.png",
     "index.html": "/DustMusic/index.html",
     "main.ac41eca8.css.map": "/DustMusic/static/css/main.ac41eca8.css.map",
-    "main.89a7dc66.js.map": "/DustMusic/static/js/main.89a7dc66.js.map"
+    "main.10db4c2f.js.map": "/DustMusic/static/js/main.10db4c2f.js.map"
   },
   "entrypoints": [
     "static/css/main.ac41eca8.css",
-    "static/js/main.89a7dc66.js"
+    "static/js/main.10db4c2f.js"
   ]
 }
