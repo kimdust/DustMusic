@@ -19,19 +19,21 @@ const Around = () => {
     height: "70px",
     fontSize: "25px",
     boxShadow: "none",
-    background: "white",
+    background: "transparent",
     fontWeight: "700",
-    color: "#422AFB",
-    borderBottom: "2px solid #422AFB",
+    color: "#FC7327",
+    borderBottom: "2px solid #FC7327",
+    borderRadius: "0",
   };
   const inactiveBtnStyle = {
     width: "50%",
     height: "70px",
     fontSize: "25px",
     boxShadow: "none",
-    background: "white",
+    background: "transparent",
     fontWeight: "700",
     borderBottom: "2px solid #E5E7EB",
+    borderRadius: "0",
   };
 
   return (

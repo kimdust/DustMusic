@@ -1,6 +1,12 @@
 import "swiper/css";
 import "swiper/css/pagination";
-import { Box, Heading, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Text,
+  useColorMode,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
 import { BsDot } from "react-icons/bs";
@@ -22,10 +28,7 @@ import jkImg from "../../../assets/images/jk.png";
 import bigbangImg from "../../../assets/images/bigbang.png";
 
 const HotArtist = () => {
-  const albumStyle = {
-    boxShadow: "0 0 5px #dbdbdb",
-    borderRadius: "50px",
-  };
+  const boxShadow = useColorModeValue("0 0 5px #dbdbdb", "none");
   const upIcon = {
     color: "#22C55F",
     fontSize: "25px",
@@ -198,8 +201,9 @@ const HotArtist = () => {
                     src={item.imageUrl}
                     alt=""
                     width={50}
-                    style={albumStyle}
+                    style={{ boxShadow, borderRadius: "50px" }}
                   />
+
                   {item.icon}
                   <span style={{ marginLeft: "-10px" }}>{item.ranking}</span>
                   <Text marginLeft="10px">

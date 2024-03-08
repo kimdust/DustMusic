@@ -1,19 +1,44 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Heading, Text } from "@chakra-ui/react";
+import { Heading, Text, useColorModeValue } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import { styled } from "styled-components";
+import { IoArrowForwardCircleOutline } from "react-icons/io5";
 
 const SlideNewSong = () => {
+  const boxShadow = useColorModeValue("0 0 5px #dbdbdb", "none");
   const slideStyle = {
     padding: "10px 0",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
   };
-  const albumStyle = {
-    boxShadow: "0 0 10px #dbdbdb",
-  };
+  const StyledImage = styled.div`
+    position: relative;
+    img {
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .playIcon {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    &:hover {
+      img {
+        filter: brightness(80%);
+      }
+      .playIcon {
+        display: block;
+      }
+    }
+  `;
   const slides = [
     {
       imageUrl:
@@ -209,13 +234,16 @@ const SlideNewSong = () => {
             slidesPerView: 6.5,
           },
         }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index} style={slideStyle}>
             <Link to={`/album/${index}`}>
-              <img src={slide.imageUrl} alt="" width={220} style={albumStyle} />
+              <StyledImage>
+                <img src={slide.imageUrl} alt="" style={{ boxShadow }} />
+                <div className="playIcon">
+                  <IoArrowForwardCircleOutline size={30} />
+                </div>
+              </StyledImage>
               <Text padding={"15px 0"}>
                 <strong>{slide.title}</strong>
                 <p>

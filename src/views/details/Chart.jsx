@@ -1,12 +1,11 @@
-import { Heading, Box, Text, Flex } from "@chakra-ui/react";
-import React, { useRef } from "react";
+import { Heading, Box, Text, Flex, useColorModeValue } from "@chakra-ui/react";
+import React from "react";
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
 import { BsDot } from "react-icons/bs";
 
 const Chart = () => {
-  const albumStyle = {
-    boxShadow: "0 0 5px #dbdbdb",
-  };
+  const boxShadow = useColorModeValue("0 0 5px #dbdbdb", "none");
+  const borderColor = useColorModeValue("#E5E7EB", "#383838");
   const upIcon = {
     color: "#22C55F",
     fontSize: "25px",
@@ -534,11 +533,16 @@ const Chart = () => {
             alignItems={"center"}
             gap={"15px"}
             p={"10px 0"}
-            borderBottom={"1px solid #E5E7EB"}
+            borderBottom={`1px solid ${borderColor}`}
             justifyContent={"space-between"}
           >
             <Flex alignItems={"center"} w={{ base: "100%", md: "75%" }}>
-              <img src={item.imageUrl} alt="" width={50} style={albumStyle} />
+              <img
+                src={item.imageUrl}
+                alt=""
+                width={50}
+                style={{ boxShadow }}
+              />
               <Box marginLeft={"10px"}>{item.icon}</Box>
               <Text
                 marginRight={{ base: "0", md: "-10px" }}

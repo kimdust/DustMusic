@@ -1,14 +1,19 @@
 import "swiper/css";
 import "swiper/css/pagination";
-import { Grid, Heading, GridItem, VStack, Text } from "@chakra-ui/react";
+import {
+  Grid,
+  Heading,
+  GridItem,
+  VStack,
+  Text,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import { FaLeaf, FaClock, FaMusic } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const Mood = () => {
-  const albumStyle = {
-    boxShadow: "0 0 5px #dbdbdb",
-  };
+  const boxShadow = useColorModeValue("0 0 5px #dbdbdb", "none");
   const gridStyle = {
     w: "100%",
     h: "100px",
@@ -312,7 +317,7 @@ const Mood = () => {
                       src={heeling.imageUrl}
                       alt=""
                       width={50}
-                      style={albumStyle}
+                      style={{ boxShadow }}
                     />
                     <Text>
                       <strong>{heeling.title}</strong>
@@ -352,7 +357,7 @@ const Mood = () => {
                       src={lovely.imageUrl}
                       alt=""
                       width={50}
-                      style={albumStyle}
+                      style={{ boxShadow }}
                     />
                     <Text>
                       <strong>{lovely.title}</strong>
@@ -392,7 +397,7 @@ const Mood = () => {
                       src={memory.imageUrl}
                       alt=""
                       width={50}
-                      style={albumStyle}
+                      style={{ boxShadow }}
                     />
                     <Text>
                       <strong>{memory.title}</strong>
@@ -432,7 +437,7 @@ const Mood = () => {
                       src={hiphop.imageUrl}
                       alt=""
                       width={50}
-                      style={albumStyle}
+                      style={{ boxShadow }}
                     />
                     <Text>
                       <strong>{hiphop.title}</strong>

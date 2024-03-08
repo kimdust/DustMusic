@@ -11,7 +11,7 @@ const Gnb = () => {
   const location = useLocation();
 
   return (
-    <UnorderedList py={6} gap={"40px"} fontSize={"16px"}>
+    <UnorderedList py={6} gap={"40px"} fontSize={"16px"} margin={0}>
       {navArr.map((item, index) => (
         <ListItem key={index}>
           <Link
@@ -21,7 +21,7 @@ const Gnb = () => {
             display="flex"
             alignItems="center"
             gap="17px"
-            p="9px 0 9px 12px"
+            p="5px 0px 9px 28px"
             sx={{
               // 조건부 스타일 적용
               color: location.pathname === item.path ? "primary" : "inherit", // 색상 변경
@@ -38,7 +38,7 @@ const Gnb = () => {
                 borderRadius: "4px",
               },
               _hover: {
-                bg: "gray.100", // 마우스 호버 시의 배경색 변경
+                bg: "#F0F0F0", // 마우스 호버 시의 배경색 변경
               },
             }}
           >

@@ -1,9 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
 import { BsDot } from "react-icons/bs";
+import { AiOutlinePlayCircle } from "react-icons/ai";
+import { styled } from "styled-components";
 
 const SlideHotVideo = () => {
   const slideStyle = {
@@ -11,10 +13,6 @@ const SlideHotVideo = () => {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-  };
-  const albumStyle = {
-    boxShadow: "0 0 10px #dbdbdb",
-    cursor: "pointer",
   };
   const upIcon = {
     color: "#22C55F",
@@ -28,6 +26,31 @@ const SlideHotVideo = () => {
     color: "#D1D5DB",
     fontSize: "25px",
   };
+  const StyledImage = styled.div`
+    position: relative;
+    img {
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .playIcon {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    &:hover {
+      img {
+        filter: brightness(80%);
+      }
+      .playIcon {
+        display: block;
+      }
+    }
+  `;
   const slides = [
     {
       imageUrl: "https://i.ytimg.com/vi/6f3RzjXPQwA/maxresdefault.jpg",
@@ -151,19 +174,23 @@ const SlideHotVideo = () => {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index} style={slideStyle}>
-            <img
-              src={slide.imageUrl}
-              alt=""
-              width={450}
-              style={albumStyle}
+            <StyledImage onClick={() => handleSlideClick(slide.youtubeLink)}>
+              <img src={slide.imageUrl} alt="" />
+              <div className="playIcon">
+                <AiOutlinePlayCircle size={30} />
+              </div>
+            </StyledImage>
+            <Text
+              padding={"15px 0"}
+              cursor={"pointer"}
               onClick={() => handleSlideClick(slide.youtubeLink)}
-            />
-            <Text padding={"15px 0"}>
-              <Flex gap={"5px"}>
-                <strong>{slide.ranking}</strong>
+            >
+              <Flex>
                 {slide.icon}
+                <Text m={"0 20px 0 5px"}>{slide.ranking}</Text>
                 <strong>{slide.title}</strong>
               </Flex>
+
               <p>
                 {slide.artist} {"·"} {slide.views}
               </p>

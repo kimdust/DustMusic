@@ -21,7 +21,11 @@ const MusicPlayer = ({ slides }) => {
 
   return (
     <>
-      <Box width={"100%"} padding={{ base: "0 20px", lg: "0 200px" }} m>
+      <Box
+        width={"100%"}
+        padding={{ base: "20px 20px 20px 0", lg: "20px 200px 0 200px" }}
+        m
+      >
         <Flex
           gap={"50px"}
           alignItems={"flex-end"}

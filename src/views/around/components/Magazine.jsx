@@ -1,4 +1,4 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex, Text, useColorModeValue } from "@chakra-ui/react";
 import magazineBaseImg01 from "../../../assets/images/magazine01_base.png";
 import magazineSmImg01 from "../../../assets/images/magazine01_sm.png";
 import magazineMdImg01 from "../../../assets/images/magazine01_md.png";
@@ -29,7 +29,8 @@ const Magazine = () => {
   return (
     <>
       <Flex
-        boxShadow={"0 0 10px #dbdbdb"}
+        boxShadow={useColorModeValue("0 0 10px #dbdbdb", "none")}
+        border={useColorModeValue("none", "1px solid #383838")}
         borderRadius={"30px"}
         m={"25px 0 20px 0"}
         display={{ base: "block", lg: "flex" }}
@@ -76,7 +77,8 @@ const Magazine = () => {
         </Flex>
       </Flex>
       <Flex
-        boxShadow={"0 0 10px #dbdbdb"}
+        boxShadow={useColorModeValue("0 0 10px #dbdbdb", "none")}
+        border={useColorModeValue("none", "1px solid #383838")}
         borderRadius={"30px"}
         mb={"20px"}
         display={{ base: "block", lg: "flex" }}
@@ -126,7 +128,8 @@ const Magazine = () => {
         </Flex>
       </Flex>
       <Flex
-        boxShadow={"0 0 10px #dbdbdb"}
+        boxShadow={useColorModeValue("0 0 10px #dbdbdb", "none")}
+        border={useColorModeValue("none", "1px solid #383838")}
         borderRadius={"30px"}
         mb={"20px"}
         display={{ base: "block", lg: "flex" }}
@@ -174,7 +177,8 @@ const Magazine = () => {
         </Flex>
       </Flex>
       <Flex
-        boxShadow={"0 0 10px #dbdbdb"}
+        boxShadow={useColorModeValue("0 0 10px #dbdbdb", "none")}
+        border={useColorModeValue("none", "1px solid #383838")}
         borderRadius={"30px"}
         mb={"20px"}
         display={{ base: "block", lg: "flex" }}
@@ -224,7 +228,8 @@ const Magazine = () => {
         </Flex>
       </Flex>
       <Flex
-        boxShadow={"0 0 10px #dbdbdb"}
+        boxShadow={useColorModeValue("0 0 10px #dbdbdb", "none")}
+        border={useColorModeValue("none", "1px solid #383838")}
         borderRadius={"30px"}
         mb={"20px"}
         display={{ base: "block", lg: "flex" }}

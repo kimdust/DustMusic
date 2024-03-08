@@ -101,7 +101,7 @@ const MusicPlayer = ({ slides }) => {
             <Heading
               fontFamily={"Pretendard"}
               paddingTop={{ base: "0", xl: "10px" }}
-              mt={{ base: "-200px", md: "0" }}
+              mt={"0"}
               fontSize={{ base: "30px", xl: "50px" }}
             >
               {selectedSlide.title}

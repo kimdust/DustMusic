@@ -18,8 +18,26 @@ import bannerSmImg03 from "../../../assets/images/banner03_sm.png";
 import bannerMdImg03 from "../../../assets/images/banner03_md.png";
 import bannerLgImg03 from "../../../assets/images/banner03_lg.png";
 import bannerXlImg03 from "../../../assets/images/banner03_xl.png";
-import bannerImg03 from "../../../assets/images/banner03.png";
 import { Link } from "react-router-dom";
+
+const SwiperStyle = styled(Swiper)`
+  width: 100%;
+  height: 200px;
+  border-radius: 30px;
+  margin: 25px 0 20px 0;
+  box-shadow: ${({ theme }) =>
+    theme.colorMode === "light" ? "0 0 10px #dbdbdb" : "none"};
+
+  .swiper-pagination {
+    bottom: 0;
+  }
+  .swiper-pagination-bullet {
+    background-color: #fff;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #1b3bbb;
+  }
+`;
 
 const BannerNew = () => {
   return (
@@ -129,22 +147,5 @@ const BannerNew = () => {
     </SwiperStyle>
   );
 };
-
-const SwiperStyle = styled(Swiper)`
-  width: 100%;
-  height: 200px;
-  border-radius: 30px;
-  margin: 25px 0 20px 0;
-  box-shadow: 0 0 5px #dbdbdb;
-  .swiper-pagination {
-    bottom: 0;
-  }
-  .swiper-pagination-bullet {
-    background-color: #fff;
-  }
-  .swiper-pagination-bullet-active {
-    background-color: #1b3bbb;
-  }
-`;
 
 export default BannerNew;

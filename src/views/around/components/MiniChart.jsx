@@ -1,14 +1,12 @@
-import "swiper/css";
-import "swiper/css/pagination";
-import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Text, Flex } from "@chakra-ui/react";
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
 import { BsDot } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { useColorModeValue } from "@chakra-ui/react";
 
 const MiniChart = () => {
-  const albumStyle = {
-    boxShadow: "0 0 5px #dbdbdb",
-  };
+  const boxShadow = useColorModeValue("0 0 5px #dbdbdb", "none");
+
   const upIcon = {
     color: "#22C55F",
     fontSize: "25px",
@@ -210,7 +208,7 @@ const MiniChart = () => {
                     src={item.imageUrl}
                     alt=""
                     width={50}
-                    style={albumStyle}
+                    style={{ boxShadow }}
                   />
                   {item.icon}
                   <span style={{ marginLeft: "-10px" }}>{item.ranking}</span>
